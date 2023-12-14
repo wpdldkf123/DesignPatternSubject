@@ -1,10 +1,10 @@
-//package hf.dp.StatePattern;
-//
-//public interface State {
-//    public void insertQuarter();
-//    public void ejectQuarter();
-//
-//    public void turnCrank();
-//
-//    public void dispense();
-//}
+package hf.dp.StatePattern;
+
+public interface State {
+    public void insertQuarter();
+    public void ejectQuarter();
+
+    public void turnCrank();
+
+    public void dispense();
+}
