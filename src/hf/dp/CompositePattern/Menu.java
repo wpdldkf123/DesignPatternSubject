@@ -36,13 +36,16 @@ public class Menu extends MenuComponent {
         return description;
     }
 
-    public void print(){
-        Iterator iterator = menuComponents.iterator();
+    public void print() {
+        System.out.print("\n" + getName());
+        System.out.println(", " + getDescription());
+        System.out.println("---------------------");
+
+        Iterator<MenuComponent> iterator = menuComponents.iterator();
         while (iterator.hasNext()) {
-            MenuComponent menuComponent = (MenuComponent)iterator.next();
+            MenuComponent menuComponent = iterator.next();
             menuComponent.print();
         }
-
     }
     // other code here doesn't change
     public Iterator createIterator() { if (iterator == null)

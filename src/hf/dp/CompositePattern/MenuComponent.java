@@ -1,6 +1,8 @@
 package hf.dp.CompositePattern;
 
-public class MenuComponent {
+import java.util.Iterator;
+
+public abstract class MenuComponent {
 
     public void add(MenuComponent menuComponent) {
         throw new UnsupportedOperationException();
@@ -24,7 +26,7 @@ public class MenuComponent {
     public boolean isVegetarian() {
         throw new UnsupportedOperationException();
     }
-
+    public abstract Iterator<MenuComponent> createIterator();
     public void print() {
         throw new UnsupportedOperationException();
     }

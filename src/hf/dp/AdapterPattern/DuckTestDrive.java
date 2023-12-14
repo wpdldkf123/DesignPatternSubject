@@ -1,5 +1,7 @@
 package hf.dp.AdapterPattern;
 
+import hf.dp.MyHWInfo;
+
 public class DuckTestDrive {
     public static void main(String[] args) {
         MyHWInfo myHWInfo = new MyHWInfo();

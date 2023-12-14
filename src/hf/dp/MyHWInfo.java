@@ -1,4 +1,4 @@
-package hf.dp.AdapterPattern;
+package hf.dp;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;

@@ -1,5 +1,10 @@
 package hf.dp.IteratorPattern;
 
+import hf.dp.CompositePattern.MenuComponent;
+import hf.dp.CompositePattern.NullIterator;
+
+import java.util.Iterator;
+
 public class MenuItem extends MenuComponent {
     @Override
     public String getName() {
@@ -14,6 +19,11 @@ public class MenuItem extends MenuComponent {
     @Override
     public boolean isVegetarian() {
         return vegetarian;
+    }
+
+    @Override
+    public Iterator<MenuComponent> createIterator() {
+        return new NullIterator();
     }
 
     @Override
